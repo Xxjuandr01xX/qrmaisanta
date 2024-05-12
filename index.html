@@ -20,7 +20,7 @@
           <div class="col-md-4">
             <img src="img/logo.jpeg" class="img-fluid" width="100" height="100"/>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-xs-8">
             <ul class="nav justify-content-end">
               <li class="nav-item">
                 <a class="btn btn-outline-danger rounded-pill" href="#">Principal</a>
@@ -32,7 +32,7 @@
         <section class="cameras">
           <div class="container-fluid">
             <div class="row clearfix d-flex justify-content-center">
-              <div class="col-12">
+              <div class="col-md-12 col-xs-6">
                 <div v-if="cameras.length === 0" class="alert alert-warning" role="alert">
                   <p>No hay camaras disponibles</p>
                 </div>
@@ -44,7 +44,7 @@
         <section class="scans">
           <div class="container-fluid">
             <div  v-if="scans.length === 0" class="row clearfix d-flex justify-content-center">
-              <div class="col-6 text-center">
+              <div class="col-md-6 col-xs-3 text-center">
                 <div class="alert alert-danger text-center" role="alert">
                   <p>No hubo Escaneo.</p>
                 </div>
@@ -58,10 +58,10 @@
             </div>
 
             <div class="row clearfix mt-3 mb-3 d-flex justify-content-center">
-              <div class="col-6">
+              <div class="col-md-6 col-xs-3">
                 <div class="card rounded-0 shoadow">
                   <div class="card-body">
-                    <div class="preview-container">
+                    <div class="preview-container w-100">
                       <video id="preview"></video>
                     </div>
                   </div>
